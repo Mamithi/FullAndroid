@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/yellow">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/alertImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="10pt"
+        app:civ_border_color="@color/blue"
+        app:civ_border_width="6dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/image1" />
+
+    <TextView
+        android:id="@+id/alertTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Android Development"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/doneBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentBottom="true"
+        android:background="#000"
+        android:text="Done"
+        android:textColor="#fff"
+        android:textSize="22sp" />
+
+</RelativeLayout>
