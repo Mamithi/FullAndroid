@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/blue">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/alert_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/image1"
+        app:civ_border_color="@color/yellow"
+        app:civ_border_width="2dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/alert_image"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/alert_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/spell_btn"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20pt"
+            android:background="#fff"
+            android:text="Spell"
+            android:textColor="#000"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/done_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#000000"
+        android:text="Done"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>
